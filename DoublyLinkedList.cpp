@@ -4,9 +4,7 @@
 
 DoublyLinkedList::DoublyLinkedList() : head(nullptr), tail(nullptr), size(0) {} // Pusta lista na start
 
-DoublyLinkedList::~DoublyLinkedList() {
-    clear();
-}
+
 void   DoublyLinkedList::clear() {
     Node* current = head;
     while (current != nullptr) {
