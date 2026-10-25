@@ -9,6 +9,15 @@ ListIterator& ListIterator::operator++() {
     return *this;
 }
 
+ListIterator& ListIterator::operator--() {
+    current = current->prev; // Przesuwa wskaźnik na poprzedni element w lewo
+    return *this;
+}
+
+bool ListIterator::operator==(const ListIterator& other) const {
+    return current == other.current; // Porównuje, czy dwa iteratory wskazują na ten sam element
+}
+
 bool ListIterator::operator!=(const ListIterator& other) const {
     return current != other.current; // Porównuje, czy dwa iteratory wskazują na to samo miejsce
 }
