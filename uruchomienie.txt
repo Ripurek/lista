@@ -1,0 +1,2 @@
+g++ main.cpp node.cpp NodeFactory.cpp Iterator.cpp DoublyLinkedList.cpp -o program.exe
+.\program.exe

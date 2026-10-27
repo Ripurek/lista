@@ -1,0 +1,50 @@
+\doxysection{Dokumentacja klasy Node\+Factory}
+\hypertarget{class_node_factory}{}\label{class_node_factory}\index{NodeFactory@{NodeFactory}}
+
+
+Fabryka tworząca nowe obiekty węzłów listy.  
+
+
+
+
+{\ttfamily \+\#include $<$Node\+Factory.\+h$>$}
+
+\doxysubsubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_node_factory_a4a6f152de44a3a76f9871fb30424652f}{create\+Node}} (int val)
+\begin{DoxyCompactList}\small\item\em Tworzy nowy węzeł listy na stercie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Fabryka tworząca nowe obiekty węzłów listy. 
+
+Klasa implementuje wzorzec fabryki w celu odseparowania logiki alokacji pamięci na stercie od zarządzania samą strukturą listy. 
+
+\label{class_node_factory_doc-func-members}
+\Hypertarget{class_node_factory_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{class_node_factory_a4a6f152de44a3a76f9871fb30424652f}\index{NodeFactory@{NodeFactory}!createNode@{createNode}}
+\index{createNode@{createNode}!NodeFactory@{NodeFactory}}
+\doxysubsubsection{\texorpdfstring{createNode()}{createNode()}}
+{\footnotesize\ttfamily \label{class_node_factory_a4a6f152de44a3a76f9871fb30424652f} 
+\doxymbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*} Node\+Factory::\+create\+Node (\begin{DoxyParamCaption}\item[{int}]{val}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tworzy nowy węzeł listy na stercie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em val} & Wartość typu int przekazywana do nowego węzła. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Wskaźnik na nowo utworzony obiekt typu \doxylink{class_node}{Node}. 
+\end{DoxyReturn}
+Fabryka tworzy w pamięci komputera nowy węzeł i go zwraca
+
+Dokumentacja dla tej klasy została wygenerowana z plików:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_node_factory_8h}{Node\+Factory.\+h}}\item 
+Node\+Factory.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lista Dwukierunkowa: Dokumentacja klasy ListIterator</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Lista Dwukierunkowa
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_list_iterator.html','','class_list_iterator-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja klasy ListIterator</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a18d49b8b360b1ca210d1473acbef2f9f" id="r_a18d49b8b360b1ca210d1473acbef2f9f"><td class="memItemLeft"><a id="a18d49b8b360b1ca210d1473acbef2f9f" name="a18d49b8b360b1ca210d1473acbef2f9f"></a>
+&#160;</td><td class="memItemRight"><b>ListIterator</b> (<a class="el" href="class_node.html">Node</a> *ptr)</td></tr>
+<tr class="memdesc:a18d49b8b360b1ca210d1473acbef2f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pamięta, na którym elemencie aktualnie stoimy. <br /></td></tr>
+<tr class="memitem:a2ba25d27e6475efc1a564ae75e8cfaba" id="r_a2ba25d27e6475efc1a564ae75e8cfaba"><td class="memItemLeft"><a id="a2ba25d27e6475efc1a564ae75e8cfaba" name="a2ba25d27e6475efc1a564ae75e8cfaba"></a>
+int &amp;&#160;</td><td class="memItemRight"><b>operator*</b> ()</td></tr>
+<tr class="memitem:a733ce9af6e308a1b3f3a25101b63c76c" id="r_a733ce9af6e308a1b3f3a25101b63c76c"><td class="memItemLeft"><a class="el" href="class_list_iterator.html">ListIterator</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a733ce9af6e308a1b3f3a25101b63c76c">operator--</a> ()</td></tr>
+<tr class="memdesc:a733ce9af6e308a1b3f3a25101b63c76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pozwala odczytać wartość elementu, na którym stoimy (gwiazdka *it).  <br /></td></tr>
+<tr class="memitem:aa0acf81f84428006c4728a5825ab1223" id="r_aa0acf81f84428006c4728a5825ab1223"><td class="memItemLeft"><a class="el" href="class_list_iterator.html">ListIterator</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aa0acf81f84428006c4728a5825ab1223">operator++</a> ()</td></tr>
+<tr class="memdesc:aa0acf81f84428006c4728a5825ab1223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pozwala przejść do poprzedniego elementu (&ndash;it).  <br /></td></tr>
+<tr class="memitem:a9e9c57e6b64e53c37dccbc5a070b4a33" id="r_a9e9c57e6b64e53c37dccbc5a070b4a33"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9e9c57e6b64e53c37dccbc5a070b4a33">operator==</a> (const <a class="el" href="class_list_iterator.html">ListIterator</a> &amp;other) const</td></tr>
+<tr class="memdesc:a9e9c57e6b64e53c37dccbc5a070b4a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pozwala przejść do następnego elementu (++it).  <br /></td></tr>
+<tr class="memitem:a08db769b562171b26ad846d91e6194da" id="r_a08db769b562171b26ad846d91e6194da"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a08db769b562171b26ad846d91e6194da">operator!=</a> (const <a class="el" href="class_list_iterator.html">ListIterator</a> &amp;other) const</td></tr>
+<tr class="memdesc:a08db769b562171b26ad846d91e6194da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy iteratory wskazują na ten sam element.  <br /></td></tr>
+<tr class="memitem:ab2366a93ad77963fe87146ee7e241f12" id="r_ab2366a93ad77963fe87146ee7e241f12"><td class="memItemLeft"><a id="ab2366a93ad77963fe87146ee7e241f12" name="ab2366a93ad77963fe87146ee7e241f12"></a>
+<a class="el" href="class_node.html">Node</a> *&#160;</td><td class="memItemRight"><b>getNode</b> () const</td></tr>
+<tr class="memdesc:ab2366a93ad77963fe87146ee7e241f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy to już koniec listy. <br /></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a08db769b562171b26ad846d91e6194da" name="a08db769b562171b26ad846d91e6194da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08db769b562171b26ad846d91e6194da">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ListIterator::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_list_iterator.html">ListIterator</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza, czy iteratory wskazują na ten sam element. </p>
+<p>Porównuje, czy dwa iteratory wskazują na to samo miejsce</p>
+
+</div>
+</div>
+<a id="aa0acf81f84428006c4728a5825ab1223" name="aa0acf81f84428006c4728a5825ab1223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0acf81f84428006c4728a5825ab1223">&#9670;&#160;</a></span>operator++()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_list_iterator.html">ListIterator</a> &amp; ListIterator::operator++ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pozwala przejść do poprzedniego elementu (&ndash;it). </p>
+<p>Zwraca dane z aktualnego węzła. </p>
+<p>Przesuwa wskaźnik na kolejny element w prawo</p>
+
+</div>
+</div>
+<a id="a733ce9af6e308a1b3f3a25101b63c76c" name="a733ce9af6e308a1b3f3a25101b63c76c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733ce9af6e308a1b3f3a25101b63c76c">&#9670;&#160;</a></span>operator--()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_list_iterator.html">ListIterator</a> &amp; ListIterator::operator-- </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pozwala odczytać wartość elementu, na którym stoimy (gwiazdka *it). </p>
+<p>Pozwala przejść do poprzedniego elementu lub do nullptr (co kończy pętlę rend)</p>
+
+</div>
+</div>
+<a id="a9e9c57e6b64e53c37dccbc5a070b4a33" name="a9e9c57e6b64e53c37dccbc5a070b4a33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e9c57e6b64e53c37dccbc5a070b4a33">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ListIterator::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_list_iterator.html">ListIterator</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pozwala przejść do następnego elementu (++it). </p>
+<p>Porównuje, czy dwa iteratory wskazują na ten sam element</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="_iterator_8h_source.html">Iterator.h</a></li>
+<li><b>Iterator.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_list_iterator.html">ListIterator</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

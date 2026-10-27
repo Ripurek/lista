@@ -1,0 +1,73 @@
+\doxysection{Dokumentacja klasy List\+Iterator}
+\hypertarget{class_list_iterator}{}\label{class_list_iterator}\index{ListIterator@{ListIterator}}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_list_iterator_a18d49b8b360b1ca210d1473acbef2f9f}\label{class_list_iterator_a18d49b8b360b1ca210d1473acbef2f9f} 
+{\bfseries List\+Iterator} (\doxymbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*}ptr)
+\begin{DoxyCompactList}\small\item\em Pamięta, na którym elemencie aktualnie stoimy. \end{DoxyCompactList}\item 
+\Hypertarget{class_list_iterator_a2ba25d27e6475efc1a564ae75e8cfaba}\label{class_list_iterator_a2ba25d27e6475efc1a564ae75e8cfaba} 
+int \& {\bfseries operator\texorpdfstring{$\ast$}{*}} ()
+\item 
+\doxymbox{\hyperlink{class_list_iterator}{List\+Iterator}} \& \doxymbox{\hyperlink{class_list_iterator_a733ce9af6e308a1b3f3a25101b63c76c}{operator-\/-\/}} ()
+\begin{DoxyCompactList}\small\item\em Pozwala odczytać wartość elementu, na którym stoimy (gwiazdka \texorpdfstring{$\ast$}{*}it). \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_list_iterator}{List\+Iterator}} \& \doxymbox{\hyperlink{class_list_iterator_aa0acf81f84428006c4728a5825ab1223}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Pozwala przejść do poprzedniego elementu (--it). \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_list_iterator_a9e9c57e6b64e53c37dccbc5a070b4a33}{operator==}} (const \doxymbox{\hyperlink{class_list_iterator}{List\+Iterator}} \&other) const
+\begin{DoxyCompactList}\small\item\em Pozwala przejść do następnego elementu (++it). \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_list_iterator_a08db769b562171b26ad846d91e6194da}{operator!=}} (const \doxymbox{\hyperlink{class_list_iterator}{List\+Iterator}} \&other) const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy iteratory wskazują na ten sam element. \end{DoxyCompactList}\item 
+\Hypertarget{class_list_iterator_ab2366a93ad77963fe87146ee7e241f12}\label{class_list_iterator_ab2366a93ad77963fe87146ee7e241f12} 
+\doxymbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Node} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy to już koniec listy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{class_list_iterator_doc-func-members}
+\Hypertarget{class_list_iterator_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{class_list_iterator_a08db769b562171b26ad846d91e6194da}\index{ListIterator@{ListIterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ListIterator@{ListIterator}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{class_list_iterator_a08db769b562171b26ad846d91e6194da} 
+bool List\+Iterator::\+operator!= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_list_iterator}{List\+Iterator}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy iteratory wskazują na ten sam element. 
+
+Porównuje, czy dwa iteratory wskazują na to samo miejsce\Hypertarget{class_list_iterator_aa0acf81f84428006c4728a5825ab1223}\index{ListIterator@{ListIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!ListIterator@{ListIterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \label{class_list_iterator_aa0acf81f84428006c4728a5825ab1223} 
+\doxymbox{\hyperlink{class_list_iterator}{List\+Iterator}} \& List\+Iterator::\+operator++ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Pozwala przejść do poprzedniego elementu (--it). 
+
+Zwraca dane z aktualnego węzła. Przesuwa wskaźnik na kolejny element w prawo\Hypertarget{class_list_iterator_a733ce9af6e308a1b3f3a25101b63c76c}\index{ListIterator@{ListIterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!ListIterator@{ListIterator}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}}
+{\footnotesize\ttfamily \label{class_list_iterator_a733ce9af6e308a1b3f3a25101b63c76c} 
+\doxymbox{\hyperlink{class_list_iterator}{List\+Iterator}} \& List\+Iterator::\+operator-\/-\/ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Pozwala odczytać wartość elementu, na którym stoimy (gwiazdka \texorpdfstring{$\ast$}{*}it). 
+
+Pozwala przejść do poprzedniego elementu lub do nullptr (co kończy pętlę rend)\Hypertarget{class_list_iterator_a9e9c57e6b64e53c37dccbc5a070b4a33}\index{ListIterator@{ListIterator}!operator==@{operator==}}
+\index{operator==@{operator==}!ListIterator@{ListIterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_list_iterator_a9e9c57e6b64e53c37dccbc5a070b4a33} 
+bool List\+Iterator::\+operator== (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_list_iterator}{List\+Iterator}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Pozwala przejść do następnego elementu (++it). 
+
+Porównuje, czy dwa iteratory wskazują na ten sam element
+
+Dokumentacja dla tej klasy została wygenerowana z plików:\+\begin{DoxyCompactItemize}
+\item 
+Iterator.\+h\item 
+Iterator.\+cpp\end{DoxyCompactItemize}

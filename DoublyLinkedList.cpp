@@ -12,23 +12,23 @@ void   DoublyLinkedList::clear() {
         delete current;
         current = nextNode;
     }
-    head = tail = nullptr; // Resetujemy wskaźniki po wyczyszczeniu listy
-    size = 0; // Resetujemy rozmiar listy
+    head = tail = nullptr; /// Resetujemy wskaźniki po wyczyszczeniu listy
+    size = 0; /// Resetujemy rozmiar listy
 }
 
 void DoublyLinkedList::push_front(int val) {
-    Node* newNode = NodeFactory::createNode(val); // Używamy fabryki do stworzenia węzła!
+    Node* newNode = NodeFactory::createNode(val); /// Używamy fabryki do stworzenia węzła!
     if (!head) {
-        head = tail = newNode; // Jeśli lista była pusta, nowy element jest i głową i ogonem
+        head = tail = newNode; /// Jeśli lista była pusta, nowy element jest i głową i ogonem
     } else {
-        newNode->next = head;  // Nowy element wskazuje na stary początek
-        head->prev = newNode;  // Stary początek wskazuje wstecz na nowy element
-        head = newNode;        // Nowy element staje się oficjalną głową
+        newNode->next = head;  /// Nowy element wskazuje na stary początek
+        head->prev = newNode;  /// Stary początek wskazuje wstecz na nowy element
+        head = newNode;        /// Nowy element staje się oficjalną głową
     }
     size++; // Zwiększamy rozmiar listy
 }
 
-DoublyLinkedList::~DoublyLinkedList() { // Pętla zwalniająca pamięć z RAMu, żeby nie było wycieków
+DoublyLinkedList::~DoublyLinkedList() { /// Pętla zwalniająca pamięć z RAMu, żeby nie było wycieków
     Node* current = head;
     while (current != nullptr) {
         Node* nextNode = current->next;
@@ -38,13 +38,13 @@ DoublyLinkedList::~DoublyLinkedList() { // Pętla zwalniająca pamięć z RAMu, 
 }
 
 void DoublyLinkedList::push_back(int val) {
-    Node* newNode = NodeFactory::createNode(val); // Używamy fabryki do stworzenia węzła!
+    Node* newNode = NodeFactory::createNode(val); /// Używamy fabryki do stworzenia węzła!
     if (!head) {
-        head = tail = newNode; // Jeśli lista była pusta, nowy element jest i głową i ogonem
+        head = tail = newNode; /// Jeśli lista była pusta, nowy element jest i głową i ogonem
     } else {
-        tail->next = newNode;  // Stary ogon wskazuje na nowy element
-        newNode->prev = tail;  // Nowy element wskazuje wstecz na stary ogon
-        tail = newNode;        // Nowy element staje się oficjalnym ogonem
+        tail->next = newNode;  /// Stary ogon wskazuje na nowy element
+        newNode->prev = tail;  /// Nowy element wskazuje wstecz na stary ogon
+        tail = newNode;        /// Nowy element staje się oficjalnym ogonem
     }
     size++; // Zwiększamy rozmiar listy
 }
@@ -85,7 +85,7 @@ void DoublyLinkedList::pop_front() {
     if (head) {
         head->prev = nullptr;
     } else {
-        tail = nullptr; // Lista stała się pusta
+        tail = nullptr; /// Lista stała się pusta
     }
     delete temp;
     size--;
@@ -97,7 +97,7 @@ void DoublyLinkedList::pop_back() {
     if (tail) {
         tail->next = nullptr;
     } else {
-        head = nullptr; // Lista stała się pusta
+        head = nullptr; /// Lista stała się pusta
     }
     delete temp;
     size--;
